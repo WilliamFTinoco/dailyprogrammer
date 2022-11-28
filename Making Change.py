@@ -3,14 +3,12 @@ def makingChange(units):
     return(0)
   else:
     coins = 0
+    coinlist = [500, 100, 25, 10, 5, 1]
+    currentcoin = 0
     while units > 0:
-      if units >= 500:
-        units += -500
+      if units >= coinlist[currentcoin]:
+        units -= coinslist[currentcoin]
         coins += 1
-      else if units >= 100:
-        units += -100
-        coins += 1
-      else if units >= 25:
-        units += -25
-        coins += 1
-      
+      else:
+        currentcoin += 1
+    return(coins)
