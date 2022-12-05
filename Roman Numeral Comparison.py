@@ -17,6 +17,6 @@ class nums:
       self.b += self.dict[x]
   def numcompare(self):
     if self.a < self.b:
-      return("True")
+      return(True)
     else:
-      return("False")
+      return(False)
